@@ -85,9 +85,14 @@ server <- function(input, output) {
   output$rcode <- renderText({
     paste(
       "# Code used in the simulation\n",
+      "# install.packages(\"devtools\")",
+      "devtools::install_github(\"Nmoiroux/ExpBites\")",
+      "library(ExpBites)",
       sprintf("df <- gen_df_human(n_individuals = %d, prob_use = %f)", input$n_ind, input$bednet_use),
       "df_bites <- gen_df_mosquito()",
       "exp_result <- calculate_Exp(df, df_bites)",
+      "plot_exposure(exp_result)",
+      "plot_behavior(exp_result)",
       sprintf("summary_tbl <- summarise_exposure(exp_result, interval = c(%d, %d))", input$start_hour, input$end_hour),
       sep = "\n"
     )
