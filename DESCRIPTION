@@ -1,0 +1,28 @@
+Package: ExpBites
+Title: Simulate and Analyze Human Exposure to Mosquito Biting
+Version: 0.1.0
+Authors@R:
+          person(given = "Nicolas", 
+           family = "Moiroux", 
+           email = "nmoiroux@gmail.com", 
+           role = c("aut", "cre"))
+Description: This package provides tools to analyse human and mosquito behavioral intercations and compute exposure to mosquito bites.
+    It includes functions to generate behavioral data for individuals and biting patterns for mosquitoes,
+    compute hourly exposure for bednet users and non-users, and summarize or visualize these dynamics across a 24-hour cycle.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    dplyr,
+    tidyr,
+    ggplot2,
+    tibble
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Depends: 
+    R (>= 4.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
