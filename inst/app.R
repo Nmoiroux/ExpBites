@@ -20,7 +20,8 @@ ui <- fluidPage(
       tabsetPanel(
         tabPanel("Exposure Plot", plotOutput("exposurePlot")),
         tabPanel("Behavior Plot", plotOutput("behaviorPlot")),
-        tabPanel("Summary Table", tableOutput("summaryTable"))
+        tabPanel("Summary Table", tableOutput("summaryTable")),
+        tabPanel("R Code", verbatimTextOutput("rcode"))
       )
     )
   )
@@ -79,6 +80,17 @@ server <- function(input, output) {
         value = ifelse(grepl("%", output), round(value * 100, 1), round(value, 3))
       ) %>%
       rename(`Summary type` = type, `Metric` = output, `Value` = value)
+  })
+  
+  output$rcode <- renderText({
+    paste(
+      "# Code used in the simulation\n",
+      sprintf("df <- gen_df_human(n_individuals = %d, prob_use = %f)", input$n_ind, input$bednet_use),
+      "df_bites <- gen_df_mosquito()",
+      "exp_result <- calculate_Exp(df, df_bites)",
+      sprintf("summary_tbl <- summarise_exposure(exp_result, interval = c(%d, %d))", input$start_hour, input$end_hour),
+      sep = "\n"
+    )
   })
 }
 
