@@ -182,7 +182,7 @@ gen_df_mosquito <- function(){
 #'
 #' @examples
 #' # generate fake data 
-#' df <- gen_df_human(n_individuals = 1, hours = c(0:9,17:23))
+#' df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
 #' df_bites <- gen_df_mosquito() 
 #' # calculate mean hourly exposure to bites
 #' exposure_results <- calculate_Exp(df, df_bites)
