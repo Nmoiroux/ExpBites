@@ -296,7 +296,7 @@ calculate_Exp <- function(df, df_bites, protection = 0.92) {
 #' summarise_exposure(result, interval = c(22, 5))
 #'
 #' @export
-summarise_exposure <- function(data, interval = c(22, 5)) {
+summarise_exposure <- function(data, interval = c(22, 5)){
 	# Helper to extract hours in interval, handling wrap-around
 	get_interval_hours <- function(start, end) {
 		if (start <= end) {
@@ -383,8 +383,6 @@ summarise_exposure <- function(data, interval = c(22, 5)) {
 							(value = .$value[.$output=="Ep" & .$type=="user_daily"] + .$value[.$output=="Epp" & .$type=="user_daily"]))
 
 	return(result)
-
-
 }
 
 
@@ -416,7 +414,6 @@ summarise_exposure <- function(data, interval = c(22, 5)) {
 #'
 #' @import ggplot2 dplyr tidyr
 #' @export
-
 plot_exposure <- function(data, cPalette = c("#000000", "#E69F00", "#56B4E9", "#009E73")){
 	# Assume result is the output of calculate_Exp()
 	# Center hour on midnight (shift so 0h is in the middle: e.g., move 12–23 before 0–11)
@@ -467,7 +464,6 @@ plot_exposure <- function(data, cPalette = c("#000000", "#E69F00", "#56B4E9", "#
 #'
 #' @import ggplot2 dplyr tidyr
 #' @export
-
 plot_behaviors <- function(data){
 	plot_people <- data %>%
 		mutate(hour_centered = (hour + 12) %% 24) %>%
