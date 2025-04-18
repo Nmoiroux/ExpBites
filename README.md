@@ -16,7 +16,7 @@ You can install the development version of **ExpBites** from GitHub:
 
 ```R 
 # install.packages("devtools")
-devtools::install_github("yourusername/ExpBites")
+devtools::install_github("Nmoiroux/ExpBites")
 ``` 
 
 Make sure you have the required dependencies: 
