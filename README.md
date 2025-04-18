@@ -1,4 +1,5 @@
 ## ExpBites: Simulate and Analyze Human Exposure to Mosquito Biting
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15237615.svg)](https://doi.org/10.5281/zenodo.15237615)
 
 ### Overview
 **ExpBites** is an R package to simulate human and mosquito behavior over time and compute mosquito biting exposure. It is designed for entomological modeling and malaria vector control analysis, particularly in the context of insecticide-treated net (ITN) usage. 
