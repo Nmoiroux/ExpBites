@@ -1,12 +1,12 @@
-## ExpBites: Simulate and Analyze Human Exposure to Mosquito Biting
+## ExpBites: Analyze Human Exposure to Mosquito Bites
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15237615.svg)](https://doi.org/10.5281/zenodo.15237615)
 
 ### Overview
-**ExpBites** is an R package to simulate human and mosquito behavior over time and compute mosquito biting exposure. It is designed for entomological modeling and malaria vector control analysis, particularly in the context of insecticide-treated net (ITN) usage. 
+**ExpBites** is an R package to compute mosquito biting exposure based on hourly human and mosquito behavior. It is designed for entomological modeling and malaria vector control analysis, particularly in the context of insecticide-treated net (ITN) usage. 
 
 ### Features 
-- Simulate individual human behavior (outdoors, indoors awake, asleep, under bednet) over 24-hour cycles. 
-- Simulate mosquito biting activity indoors and outdoors. 
+- Simulate individual human behavior (outdoors, indoors awake, asleep, under bednet) over 24-hour cycles (for test purpose). 
+- Simulate mosquito biting activity indoors and outdoors (for test purpose). 
 - Estimate exposure to mosquito bites for bednet users and non-users. 
 - Calculate proportions of exposure prevented by nets.
 - Calculate proportions of exposure indoors or during specified time intervals.
@@ -30,7 +30,7 @@ install.packages(c("dplyr", "tidyr", "ggplot2", "tibble"))
 ```R 
 library(ExpBites) 
 
-# Generate simulated human and mosquito data 
+# Generate simulated human and mosquito data (for test purpose)
 df <- gen_df_human(n_individuals = 100) 
 df_bites <- gen_df_mosquito() 
 
