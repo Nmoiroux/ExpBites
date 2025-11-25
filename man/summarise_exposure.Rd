@@ -33,13 +33,7 @@ based on the output of \code{\link{calculate_Exp}}. Protective efficacy of bedne
 and proportion of exposure indoors or during the specified interval are computed.
 }
 \details{
-The mathematical model of behavioral interactions is an extension of the Killeen’s model (1) as previously described in Geissbühler et al. (2) and Moiroux et al. (3)
-
-(1) Killeen, Gerry F., Japhet Kihonda, Edith Lyimo, Fred R. Oketch, Maya E. Kotas, Evan Mathenge, Joanna A. Schellenberg, Christian Lengeler, Thomas A. Smith, and Chris J. Drakeley. ‘Quantifying Behavioural Interactions between Humans and Mosquitoes: Evaluating the Protective Efficacy of Insecticidal Nets against Malaria Transmission in Rural Tanzania’. BMC Infectious Diseases 6 (2006): 161. https://doi.org/10.1186/1471-2334-6-161.
-
-(2) Geissbühler, Yvonne, Prosper Chaki, Basiliana Emidi, Nicodemus J. Govella, Rudolf Shirima, Valeliana Mayagaya, Deo Mtasiwa, et al. ‘Interdependence of Domestic Malaria Prevention Measures and Mosquito-Human Interactions in Urban Dar Es Salaam, Tanzania’. Malaria Journal 6 (2007): 126. https://doi.org/10.1186/1475-2875-6-126.
-
-(3) Moiroux, Nicolas, Georgia B. Damien, Marc Egrot, Armel Djenontin, Fabrice Chandre, Vincent Corbel, Gerry F. Killeen, and Cédric Pennetier. ‘Human Exposure to Early Morning Anopheles Funestus Biting Behavior and Personal Protection Provided by Long-Lasting Insecticidal Nets’. PloS One 9, no. 8 (2014): e104967. https://doi.org/10.1371/journal.pone.0104967.
+The mathematical model of behavioral interactions is an extension of the \insertCite{killeenQuantifyingBehaviouralInteractions2006;textual}{ExpBites} model as previously described in \insertCite{geissbuhlerInterdependenceDomesticMalaria2007;textual}{ExpBites} and \insertCite{moirouxHumanExposureEarly2014;textual}{ExpBites}
 }
 \examples{
 # generate fake data 
@@ -50,4 +44,7 @@ exposure_results <- calculate_Exp(df, df_bites)
 # summarise exposure estimates
 summarise_exposure(exposure_results, interval = c(22, 5))
 
+}
+\references{
+\insertAllCited{}
 }
