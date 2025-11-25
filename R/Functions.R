@@ -420,7 +420,7 @@ summarise_exposure <- function(data, interval = c(22, 5)){
 #' # calculate mean hourly exposure to bites
 #' exposure_results <- calculate_Exp(df, df_bites)
 #' # plot
-#' plot_exposure(result)
+#' plot_exposure(exposure_results)
 #'
 #' @import ggplot2 dplyr tidyr
 #' @export
@@ -475,7 +475,7 @@ plot_exposure <- function(data, cPalette = c("#000000", "#E69F00", "#56B4E9", "#
 #' # calculate mean hourly exposure to bites
 #' exposure_results <- calculate_Exp(df, df_bites)
 #' # plot
-#' plot_behaviors(result)
+#' plot_behaviors(exposure_results)
 #'
 #' @import ggplot2 dplyr tidyr
 #' @export
