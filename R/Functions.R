@@ -292,8 +292,13 @@ calculate_Exp <- function(df, df_bites, protection = 0.92) {
 #' }
 #'
 #' @examples
-#' # Assuming `result` is the output from calculate_Exp()
-#' summarise_exposure(result, interval = c(22, 5))
+#' # generate fake data 
+#' df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+#' df_bites <- gen_df_mosquito() 
+#' # calculate mean hourly exposure to bites
+#' exposure_results <- calculate_Exp(df, df_bites)
+#' # summarise exposure estimates
+#' summarise_exposure(exposure_results, interval = c(22, 5))
 #'
 #' @export
 summarise_exposure <- function(data, interval = c(22, 5)){
@@ -409,7 +414,12 @@ summarise_exposure <- function(data, interval = c(22, 5)){
 #' @return A \code{ggplot2} stacked area chart object showing the distribution of exposure types across centered hours.
 #'
 #' @examples
-#' # Assuming `result` is the output from `calculate_Exp()`
+#' # generate fake data 
+#' df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+#' df_bites <- gen_df_mosquito() 
+#' # calculate mean hourly exposure to bites
+#' exposure_results <- calculate_Exp(df, df_bites)
+#' # plot
 #' plot_exposure(result)
 #'
 #' @import ggplot2 dplyr tidyr
@@ -459,7 +469,12 @@ plot_exposure <- function(data, cPalette = c("#000000", "#E69F00", "#56B4E9", "#
 #'   and line plots for mosquito biting rates (on the secondary Y-axis), with hours centered on midnight.
 #'
 #' @examples
-#' # Assuming `result` is the output from `calculate_Exp()`
+#' # generate fake data 
+#' df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+#' df_bites <- gen_df_mosquito() 
+#' # calculate mean hourly exposure to bites
+#' exposure_results <- calculate_Exp(df, df_bites)
+#' # plot
 #' plot_behaviors(result)
 #'
 #' @import ggplot2 dplyr tidyr
