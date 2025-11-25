@@ -1,12 +1,12 @@
 Package: ExpBites
-Title: Simulate and Analyze Human Exposure to Mosquito Biting
-Version: 0.1.0
+Title: Analyzing Human Exposure to Mosquito Biting
+Version: 0.1.2
 Authors@R:
           person(given = "Nicolas", 
            family = "Moiroux", 
-           email = "nmoiroux@gmail.com", 
+           email = "nicolas.moiroux@ird.fr", 
            role = c("aut", "cre"))
-Description: This package provides tools to analyse human and mosquito behavioral intercations and compute exposure to mosquito bites.
+Description: This package provides tools to analyse human and mosquito behavioral interactions and compute exposure to mosquito bites.
     It includes functions to generate behavioral data for individuals and biting patterns for mosquitoes,
     compute hourly exposure for bednet users and non-users, and summarize or visualize these dynamics across a 24-hour cycle.
 License: GPL-3
@@ -25,3 +25,5 @@ Depends:
     R (>= 4.1.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
+URL: https://github.com/Nmoiroux/ExpBites
+BugReports: https://github.com/Nmoiroux/ExpBites/issues

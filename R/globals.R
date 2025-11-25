@@ -1,0 +1,2 @@
+utils::globalVariables(c(".", "Bi_t", "Bo_t", "Epi", "Epn", "Epo", "Epp", "bednet_user", "component", "exposure", "hour",
+                         "hour_centered", "mosquitoes", "p_in", "p_net", "people", "type", "value"))
