@@ -26,7 +26,12 @@ and mosquito biting behavior (biting rates indoors and outdoors). Human behavior
 primary Y-axis, while mosquito biting rates are shown as lines on the secondary Y-axis. Hours are centered on midnight.
 }
 \examples{
-# Assuming `result` is the output from `calculate_Exp()`
-plot_behaviors(result)
+# generate fake data 
+df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+df_bites <- gen_df_mosquito() 
+# calculate mean hourly exposure to bites
+exposure_results <- calculate_Exp(df, df_bites)
+# plot
+plot_behaviors(exposure_results)
 
 }

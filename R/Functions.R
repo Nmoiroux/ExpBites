@@ -87,7 +87,7 @@ gen_df_human <- function(n_individuals = 100, hours = c(0:23), prob_use = 0.5){
 #' @examples
 #' df_bites <- gen_df_mosquito()
 #' head(df_bites)
-#'
+#' @importFrom stats rpois
 #' @export
 gen_df_mosquito <- function(){
 	# Define hours of the day

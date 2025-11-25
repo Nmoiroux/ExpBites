@@ -12,12 +12,11 @@ Description: This package provides tools to analyse human and mosquito behaviora
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Imports: 
     dplyr,
     tidyr,
-    ggplot2,
-    tibble
+    ggplot2
 Suggests: 
     knitr,
     rmarkdown,

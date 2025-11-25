@@ -21,5 +21,4 @@ Biting rates follow predefined lambda patterns that reflect typical mosquito act
 \examples{
 df_bites <- gen_df_mosquito()
 head(df_bites)
-
 }

@@ -42,7 +42,12 @@ The mathematical model of behavioral interactions is an extension of the Killeen
 (3) Moiroux, Nicolas, Georgia B. Damien, Marc Egrot, Armel Djenontin, Fabrice Chandre, Vincent Corbel, Gerry F. Killeen, and Cédric Pennetier. ‘Human Exposure to Early Morning Anopheles Funestus Biting Behavior and Personal Protection Provided by Long-Lasting Insecticidal Nets’. PloS One 9, no. 8 (2014): e104967. https://doi.org/10.1371/journal.pone.0104967.
 }
 \examples{
-# Assuming `result` is the output from calculate_Exp()
-summarise_exposure(result, interval = c(22, 5))
+# generate fake data 
+df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+df_bites <- gen_df_mosquito() 
+# calculate mean hourly exposure to bites
+exposure_results <- calculate_Exp(df, df_bites)
+# summarise exposure estimates
+summarise_exposure(exposure_results, interval = c(22, 5))
 
 }

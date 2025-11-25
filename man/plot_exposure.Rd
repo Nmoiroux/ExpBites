@@ -30,7 +30,12 @@ among bednet users, broken down by exposure type: outdoors, indoors (no net), in
 and prevented exposure due to bednet use. The hours are centered on midnight for better visualization.
 }
 \examples{
-# Assuming `result` is the output from `calculate_Exp()`
-plot_exposure(result)
+# generate fake data 
+df <- gen_df_human(n_individuals = 100, hours = c(0:9,17:23))
+df_bites <- gen_df_mosquito() 
+# calculate mean hourly exposure to bites
+exposure_results <- calculate_Exp(df, df_bites)
+# plot
+plot_exposure(exposure_results)
 
 }
