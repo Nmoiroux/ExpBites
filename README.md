@@ -5,7 +5,7 @@
 **ExpBites** is an R package to compute mosquito biting exposure based on hourly human and mosquito behavior. It is designed for entomological modeling and malaria vector control analysis, particularly in the context of insecticide-treated net (ITN) usage. 
 
 ### Features 
-- Simulate individual human behavior (outdoors, indoors awake, asleep, under bednet) over 24-hour cycles (for test purpose). 
+- Simulate individual human behavior (outdoors, indoors awake, asleep, under bed net) over 24-hour cycles (for test purpose). 
 - Simulate mosquito biting activity indoors and outdoors (for test purpose). 
 - Estimate exposure to mosquito bites for bednet users and non-users. 
 - Calculate proportions of exposure prevented by nets.
@@ -23,7 +23,7 @@ devtools::install_github("Nmoiroux/ExpBites")
 Make sure you have the required dependencies: 
 
 ```R 
-install.packages(c("dplyr", "tidyr", "ggplot2", "tibble")) 
+install.packages(c("dplyr", "tidyr", "ggplot2", "Rdpack")) 
 ``` 
 
 ### Example 
@@ -56,4 +56,4 @@ This package builds upon and extends the models described in:
 - Moiroux et al. (2014). *Human exposure to early morning Anopheles biting...* [PLoS One](https://doi.org/10.1371/journal.pone.0104967) 
 
 ### License 
-This package is released under the [GPL-3 License](https://www.gnu.org/licenses/gpl-3.0.html). 
+This package is released under the [GPL-3 License](https://www.gnu.org/licenses/gpl-3.0-standalone.html). 

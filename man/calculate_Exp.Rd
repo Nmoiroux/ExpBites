@@ -12,8 +12,8 @@ calculate_Exp(df, df_bites, protection = 0.92)
 \item \code{individual} – individual ID,
 \item \code{hour} – hour of the day (0–23),
 \item \code{state} – activity/location state (1 = outdoors, 2 = indoors awake,
-3 = indoors asleep, 4 = indoors asleep under bednet),
-\item \code{bednet_user} – logical indicator of bednet use (TRUE/FALSE).
+3 = indoors asleep, 4 = indoors asleep under bed net),
+\item \code{bednet_user} – logical indicator of bed net use (TRUE/FALSE).
 }}
 
 \item{df_bites}{A dataframe of biting rates by hour, with columns:
@@ -39,9 +39,9 @@ A dataframe with one row per hour (0–23) and the following columns:
 \item \code{p_in} – proportion of people (users) being indoors,
 \item \code{p_net} – proportion of people (users) being asleep (under net),
 \item \code{Epi} – mean exposure of users indoors (not under net),
-\item \code{Epn} – mean exposure of users indoors under bednet (adjusted by protection),
+\item \code{Epn} – mean exposure of users indoors under bed net (adjusted by protection),
 \item \code{Epo} – mean exposure of users outdoors,
-\item \code{Epp} – mean exposure prevented by bednet use,
+\item \code{Epp} – mean exposure prevented by bed net use,
 \item \code{Ep} – total mean exposure of users.
 }
 }

@@ -6,7 +6,7 @@
 \alias{ExpBites-package}
 \title{ExpBites: Analyzing Human Exposure to Mosquito Biting}
 \description{
-This package provides tools to analyse human and mosquito behavioral interactions and compute exposure to mosquito bites estimates. It includes functions to generate behavioral data for human individuals and biting patterns for mosquitoes, compute hourly exposure for bednet users and non-users, and summarize or visualize these dynamics across a 24-hour cycle.
+This package provides tools to analyse human and mosquito behavioral interactions and compute exposure to mosquito bites estimates. It includes functions to generate behavioral data for human individuals and biting patterns for mosquitoes, compute hourly exposure for bed net users and non-users, and summarize or visualize these dynamics across a 24-hour cycle.
 }
 \seealso{
 Useful links:
