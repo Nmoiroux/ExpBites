@@ -431,7 +431,7 @@ plot_exposure <- function(data, cPalette = c("#000000", "#E69F00", "#56B4E9", "#
 
 	# Plot
 	plot <- ggplot(plot_data, aes(x = hour_centered, y = exposure, fill = component)) +
-		geom_area(alpha = 0.4, color = "black", size = 0.2) +
+		geom_area(alpha = 0.4, color = "black", linewidth = 0.2) +
 		scale_x_continuous(breaks =  c(5,10,15,20), labels=c("17","22","3","8"), name = "Hour") +
 		ylab("Exposure to mosquitoes (bites/person/hour)") +
 		scale_fill_manual(values=cPalette, name = "Exposure :")
@@ -491,9 +491,9 @@ plot_behaviors <- function(data){
 	scale_factor <- max(plot_mosq$value, na.rm = TRUE)/100
 
 	plot <- ggplot2::ggplot() +
-		ggplot2::geom_area(data = plot_people, aes(x=hour_centered, y=value, fill=people),colour="grey", size=.3, alpha=.4) +
+		ggplot2::geom_area(data = plot_people, aes(x=hour_centered, y=value, fill=people),colour="grey", linewidth=.3, alpha=.4) +
 		ggplot2::scale_y_continuous(sec.axis = ggplot2::sec_axis(~.*scale_factor, name = "hourly biting rate (bites/person/hour)"), name = "% of people indoor or under net") +
-		ggplot2::geom_line(data = plot_mosq, ggplot2::aes(x=hour_centered, y = value/scale_factor, linetype = mosquitoes), size=0.6) +
+		ggplot2::geom_line(data = plot_mosq, ggplot2::aes(x=hour_centered, y = value/scale_factor, linetype = mosquitoes), linewidth=0.6) +
 		ggplot2::scale_linetype_manual(values = c('Indoors' = 1,'Outdoors' = 4)) +
 		ggplot2::scale_x_continuous(breaks =  c(5,10,15,20),labels=c("17","22","3","8"), name = "Hour")
 
