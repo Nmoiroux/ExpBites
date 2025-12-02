@@ -20,10 +20,29 @@ e.g., \code{c(22, 5)} for 10pm to 5am. Wraps over midnight if needed.}
 \value{
 A tibble with three columns:
 \describe{
-\item{type}{Character string indicating the category of summary: \code{"non_user_daily"}, \code{"user_daily"},
-\code{"non_user_interval"}, \code{"user_interval"}, \code{"interval_vs_daily"} or \code{"net_efficacy"}.}
-\item{output}{Name of the exposure component or metric (e.g., \code{"Eui"}, \code{"Euo"}, \code{"Ep"},
-\code{"Epp"}, \code{"prop_indoor"}, etc., \code{"prop_interval_non_user"}, \code{"prop_interval_user"} and \code{"prop_prevented"}).}
+\item{type}{Character string indicating the category of summary:
+\itemize{
+\item \code{"non_user_daily"} – metric for non-users of nets (daily),
+\item \code{"user_daily"} – metric for users of nets (daily),
+\item \code{"non_user_interval"} – metric for non-users of nets (specified time interval),
+\item \code{"user_interval"} – metric for users of nets (specified time interval),
+\item \code{"interval_vs_daily"} – metric comparing exposure in the specified time interval to the daily exposure,
+\item \code{"net_efficacy"} – metric related to net protective efficacy}.}
+
+\item{output}{Name of the exposure component or metric:
+\itemize{
+\item \code{"Eui"} – average exposure of an unprotected individual (non-user) indoors (in bites),
+\item \code{"Euo"} – average exposure of an unprotected individual (non-user) outdoors (in bites),
+\item \code{"Eu"} – average total exposure of an unprotected individual (non-user) (in bites),
+\item \code{"Epi"} – average exposure of a net-protected individual (user) indoors but not under the net (in bites),
+\item \code{"Epo"} – average exposure of a net-protected individual (user) outdoors (in bites),
+\item \code{"Epn"} – average exposure of a net-protected individual (user) indoors under the net (in bites),
+\item \code{"Epp"} – average exposure prevented by the use of a net (in bites),
+\item \code{"Ep"} – average total exposure of net-protected individual (user)(in bites),
+\item \code{"prop_indoor"} – proportion of exposure to bite occurring indoors (in \%),
+\item \code{prop_interval_non_user} – proportion of exposure to bite occurring during the specified time interval, for unprotected non-users (in \%),
+\item \code{"prop_interval_user"} – proportion of exposure to bite occurring during the specified time interval, for net-protected users (in \%),
+\item \code{"prop_prevented"} – proportion of exposure to bite prevented by the use of a net (in \%)}.}
 \item{value}{Numeric value corresponding to the output for the given type.}
 }
 }
