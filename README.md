@@ -14,7 +14,13 @@
 - Visualize exposure and behavior patterns over time. 
 
 ### Installation 
-You can install the development version of **ExpBites** from GitHub: 
+You can install the released version of **ExpBites** from
+[CRAN](https://CRAN.R-project.org) with :
+
+```R
+install.packages("ExpBites")
+```
+or the development version from GitHub: 
 
 ```R 
 # install.packages("devtools")
