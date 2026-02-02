@@ -56,11 +56,25 @@ plot_exposure(exp_result)
 plot_behaviors(exp_result) 
 ``` 
 
+## When should I use ecoXCorr?
+
+ecoXCorr is useful when:
+
+- environmental drivers are expected to have delayed effects
+- the relevant time scale of these effects is unknown
+- you want a global view of lagged associations rather than testing a single lag
+
+Typical applications include:
+
+- vector ecology
+- disease ecology
+- environmental epidemiology
+- climate–biology interactions
+
 ### References 
-This package builds upon and extends the models described in: 
-- Killeen et al. (2006). *Quantifying behavioural interactions between humans and mosquitoes...* [BMC Infectious Diseases](https://doi.org/10.1186/1471-2334-6-161) 
-- Geissbühler et al. (2007). *Interdependence of domestic malaria prevention measures...* [Malaria Journal](https://doi.org/10.1186/1475-2875-6-126) 
-- Moiroux et al. (2014). *Human exposure to early morning Anopheles biting...* [PLoS One](https://doi.org/10.1371/journal.pone.0104967) 
+This package builds upon : 
+- Curriero FC, Shone SM, Glass GE. (2005) *Cross correlation maps: a tool for visualizing and modeling time lagged associations.* [Vector Borne Zoonotic Dis.](https://doi.org/10.1089/vbz.2005.5.267)
+
 
 ### License 
 This package is released under the [GPL-3 License](https://www.gnu.org/licenses/gpl-3.0-standalone.html). 
