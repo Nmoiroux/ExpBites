@@ -1,0 +1,19 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'ExpBites: Analyzing Human Exposure to Mosquito Biting'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nicolas
+    family-names: Moiroux
+    email: nicolas.moiroux@ird.fr
+    orcid: 'https://orcid.org/0000-0001-6755-6167'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17723095
+repository-code: 'https://github.com/nmoiroux/expbites'
+version: 0.1.4
