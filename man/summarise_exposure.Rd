@@ -33,16 +33,16 @@ A tibble with three columns:
 \itemize{
 \item \code{"Eui"} – average exposure of an unprotected individual (non-user) indoors (in bites),
 \item \code{"Euo"} – average exposure of an unprotected individual (non-user) outdoors (in bites),
-\item \code{"Eu"} – average total exposure of an unprotected individual (non-user) (in bites),
+\item \code{"Eu"} – average exposure of an unprotected individual (non-user) (in bites),
 \item \code{"Epi"} – average exposure of a net-protected individual (user) indoors but not under the net (in bites),
 \item \code{"Epo"} – average exposure of a net-protected individual (user) outdoors (in bites),
 \item \code{"Epn"} – average exposure of a net-protected individual (user) indoors under the net (in bites),
 \item \code{"Epp"} – average exposure prevented by the use of a net (in bites),
-\item \code{"Ep"} – average total exposure of net-protected individual (user)(in bites),
-\item \code{"prop_indoor"} – proportion of exposure to bite occurring indoors (in \%),
-\item \code{prop_interval_non_user} – proportion of exposure to bite occurring during the specified time interval, for unprotected non-users (in \%),
-\item \code{"prop_interval_user"} – proportion of exposure to bite occurring during the specified time interval, for net-protected users (in \%),
-\item \code{"prop_prevented"} – proportion of exposure to bite prevented by the use of a net (in \%)}.}
+\item \code{"Ep"} – average exposure of net-protected individual (user)(in bites),
+\item \code{"prop_indoor"} – proportion of exposure to bites occurring indoors (in \%),
+\item \code{"prop_interval_non_user"} – proportion of exposure to bites occurring during the specified time interval, for unprotected non-users (in \%),
+\item \code{"prop_interval_user"} – proportion of exposure to bites occurring during the specified time interval, for net-protected users (in \%),
+\item \code{"prop_prevented"} – proportion of exposure to bites prevented by the use of a net (in \%)}.}
 \item{value}{Numeric value corresponding to the output for the given type.}
 }
 }
