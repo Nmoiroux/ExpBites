@@ -1,5 +1,6 @@
 ## ExpBites: Analyze Human Exposure to Mosquito Bites
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15237615.svg)](https://doi.org/10.5281/zenodo.15237615)
+[![ExpBites status badge](https://r-multiverse.r-universe.dev/ExpBites/badges/version)](https://r-multiverse.r-universe.dev/ExpBites)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ExpBites)](https://cran.r-project.org/package=ExpBites)
 [![](https://cranlogs.r-pkg.org/badges/ExpBites)](https://cran.r-project.org/package=ExpBites)
 
